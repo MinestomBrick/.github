@@ -1,0 +1,10 @@
+{
+  "name": "Gradle test, build and upload artifact",
+  "description": "Gradle test, build and upload artifact",
+  "categories": [
+    "Java"
+  ],
+  "filePatterns": [
+    "build.gradle"
+  ]
+}

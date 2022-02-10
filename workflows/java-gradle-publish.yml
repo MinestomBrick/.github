@@ -1,0 +1,20 @@
+name: Gradle publish
+
+jobs:
+  publish:
+    needs: test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Set up JDK
+        uses: actions/setup-java@v2
+        with:
+          java-version: '17'
+          distribution: 'temurin'
+      - name: Publish package
+        uses: gradle/gradle-build-action@v2
+        with:
+          arguments: publish
+        env:
+          ORG_GRADLE_PROJECT_JorisgUsername: ${{ secrets.JORISG_REPO_USERNAME }}
+          ORG_GRADLE_PROJECT_JorisgPassword: ${{ secrets.JORISG_REPO_PASSWORD }}

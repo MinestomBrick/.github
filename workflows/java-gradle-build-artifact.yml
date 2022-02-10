@@ -1,0 +1,23 @@
+name: Gradle test
+
+jobs:
+  build:
+    needs: test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Set up JDK
+        uses: actions/setup-java@v2
+        with:
+          java-version: '17'
+          distribution: 'temurin'
+      - name: Build with Gradle
+        run: './gradlew shadowJar'
+      - name: Get name
+        run: './gradlew projects | grep -o -P "(?<=Root project '').*(?=\'')" >> $PROJECT_NAME'
+      - name: Upload a Build Artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: ${{ env.PROJECT_NAME }}
+          path: 'app/build/libs/${{ env.PROJECT_NAME }}.jar'
+          if-no-files-found: 'error'
