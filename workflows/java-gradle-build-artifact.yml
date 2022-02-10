@@ -1,5 +1,8 @@
 name: Gradle test
 
+on:
+  workflow_call:
+
 jobs:
   build:
     needs: test
