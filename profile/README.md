@@ -5,21 +5,21 @@ The goal of MinestomBrick is to allow a basis for  [Minestom](https://github.com
 ## [Brick](https://github.com/MinestomBrick/Brick)
 
 [Brick](https://github.com/MinestomBrick/Brick) is our custom server implementation for Minestom. 
-It adds a colorful terminal, rolling file logging, port and online-mode startup parameters and 
+It adds a colorful terminal, rolling file logging, useful startup parameters and 
 a graceful stop command.
 
 ## Extensions
 
 All extensions should work on any server implementation, they do **not** depend on [Brick](https://github.com/MinestomBrick/Brick) specifically.
 
-| Extension                                                               | Description                                                                                                                                                         | API |
-|-------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----|
-| [BrickPlaceholders](https://github.com/MinestomBrick/BrickPlaceholders) | A simple placeholder extension with an API to register and consume placeholders. Also works with [Adventure](https://github.com/KyoriPowered/adventure) components. | Yes |
-| [BrickSidebar](https://github.com/MinestomBrick/BrickSidebar)           | A simple sidebar extension with layering so multiple sidebars can be managed.                                                                                       | Yes |
-| [BrickNametags](https://github.com/MinestomBrick/BrickNametags)         | A simple nametag extension to give nametag prefixes and suffixes to players.                                                                                        | Yes |
-| [BrickChat](https://github.com/MinestomBrick/BrickChat)                 | A simple chat plugin to handle multiple chat channels.                                                                                                              | Yes |
-| [BrickWorlds](https://github.com/MinestomBrick/BrickWorlds)             | A simple world management extension for creating, saving and loading worlds.                                                                                        | Yes |
-| [BrickEssnetials](https://github.com/MinestomBrick/BrickEssentials)     | A simple extension which adds some vanilla commands and features like /gamemode, /teleport, ...                                                                     | No  |
+| Extension                                                               | Description                                                                                                                                                         | API                |
+|-------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------|
+| [BrickPlaceholders](https://github.com/MinestomBrick/BrickPlaceholders) | A simple placeholder extension with an API to register and consume placeholders. Also works with [Adventure](https://github.com/KyoriPowered/adventure) components. | :heavy_check_mark: |
+| [BrickSidebar](https://github.com/MinestomBrick/BrickSidebar)           | A simple sidebar extension with layering so multiple sidebars can be managed.                                                                                       | :heavy_check_mark: |
+| [BrickNametags](https://github.com/MinestomBrick/BrickNametags)         | A simple nametag extension to give nametag prefixes and suffixes to players.                                                                                        | :heavy_check_mark: |
+| [BrickChat](https://github.com/MinestomBrick/BrickChat)                 | A simple chat plugin to handle multiple chat channels.                                                                                                              | :heavy_check_mark: |
+| [BrickWorlds](https://github.com/MinestomBrick/BrickWorlds)             | A simple world management extension for creating, saving and loading worlds.                                                                                        | :heavy_check_mark: |
+| [BrickEssentials](https://github.com/MinestomBrick/BrickEssentials)     | A simple extension which adds some vanilla commands and features like /gamemode, /teleport, ...                                                                     | :x:                |
 
 
 ## Utils
