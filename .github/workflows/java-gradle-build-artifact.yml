@@ -16,7 +16,7 @@ jobs:
       - name: Build with Gradle
         run: './gradlew shadowJar'
       - name: Get name
-        run: './gradlew projects | grep -o -P "(?<=Root project '').*(?=\'')" >> $PROJECT_NAME'
+        run: 'export PROJECT_NAME=$(./gradlew projects | grep -o -P -m 1 "(?<=Root project '').*(?=\'')")'
       - name: Upload a Build Artifact
         uses: actions/upload-artifact@v2
         with:
