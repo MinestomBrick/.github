@@ -1,0 +1,22 @@
+name: Gradle publish
+
+on:
+  workflow_call:
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Set up JDK
+        uses: actions/setup-java@v2
+        with:
+          java-version: '17'
+          distribution: 'temurin'
+      - name: Generate javadoc
+        run: './gradlew javadoc'
+      - name: Deploy github pages
+        uses: JamesIves/github-pages-deploy-action@v4.2.5
+        with:
+          branch: javadocs
+          folder: api/build/docs/javadoc
