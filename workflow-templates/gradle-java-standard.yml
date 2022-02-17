@@ -10,9 +10,9 @@ jobs:
   test:
     uses: MinestomBrick/.github/.github/workflows/java-gradle-test.yml@main
 
-  build:
-    needs: test
-    uses: MinestomBrick/.github/.github/workflows/java-gradle-build-artifact.yml@main
+#  build:
+#    needs: test
+#    uses: MinestomBrick/.github/.github/workflows/java-gradle-build-artifact.yml@main
 
   publish:
     needs: test
@@ -24,3 +24,7 @@ jobs:
   javadoc:
     needs: test
     uses: MinestomBrick/.github/.github/workflows/java-gradle-javadoc.yml@main
+
+  pre-release:
+    needs: test
+    uses: MinestomBrick/.github/.github/workflows/java-gradle-github-release.yml@main
