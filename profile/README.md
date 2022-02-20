@@ -2,7 +2,7 @@
 
 The goal of MinestomBrick is to allow a basis for  [Minestom](https://github.com/Minestom/Minestom) servers with plug and play extensions.
 
-## [Brick](https://github.com/MinestomBrick/Brick)
+## Server
 
 [Brick](https://github.com/MinestomBrick/Brick) is our custom server implementation for Minestom. 
 It adds a colorful terminal, rolling file logging, useful startup parameters and 
@@ -12,24 +12,31 @@ a graceful stop command.
 
 All extensions should work on any server implementation, they do **not** depend on [Brick](https://github.com/MinestomBrick/Brick) specifically.
 
-| Extension                                                               | Description                                                                                                                                                         | API                |
-|-------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------|
-| [BrickPlaceholders](https://github.com/MinestomBrick/BrickPlaceholders) | A simple placeholder extension with an API to register and consume placeholders. Also works with [Adventure](https://github.com/KyoriPowered/adventure) components. | :heavy_check_mark: |
-| [BrickSidebar](https://github.com/MinestomBrick/BrickSidebar)           | A simple sidebar extension with layering so multiple sidebars can be managed.                                                                                       | :heavy_check_mark: |
-| [BrickNametags](https://github.com/MinestomBrick/BrickNametags)         | A simple nametag extension to give nametag prefixes and suffixes to players.                                                                                        | :heavy_check_mark: |
-| [BrickChat](https://github.com/MinestomBrick/BrickChat)                 | A simple chat plugin to handle multiple chat channels.                                                                                                              | :heavy_check_mark: |
-| [BrickWorlds](https://github.com/MinestomBrick/BrickWorlds)             | A simple world management extension for creating, saving and loading worlds.                                                                                        | :heavy_check_mark: |
-| [BrickEssentials](https://github.com/MinestomBrick/BrickEssentials)     | A simple extension which adds some vanilla commands and features like /gamemode, /teleport, ...                                                                     | :x:                |
+| Extension                                                                         | Description                                                                  | API                |
+|-----------------------------------------------------------------------------------|------------------------------------------------------------------------------|--------------------|
+| [BrickI18n](https://github.com/MinestomBrick/BrickI18n)                           | Library for internationalization with reusable namespaces across extensions. | :heavy_check_mark: |
+| [BrickCommandTools](https://github.com/MinestomBrick/BrickCommandTools)           | Easy to use condition builder and command group builder.                     | :heavy_check_mark: |
+| [BrickPlaceholders](https://github.com/MinestomBrick/BrickPlaceholders)           | Register and use placeholders by other extensions.                           | :heavy_check_mark: |
+| [BrickSidebar](https://github.com/MinestomBrick/BrickSidebar)                     | Manage multiple sidebars per player.                                         | :heavy_check_mark: |
+| [BrickNametags](https://github.com/MinestomBrick/BrickNametags)                   | Manage nametags for each player.                                             | :heavy_check_mark: |
+| [BrickChat](https://github.com/MinestomBrick/BrickChat)                           | Manage custom chat channels.                                                 | :heavy_check_mark: |
+| [BrickWorlds](https://github.com/MinestomBrick/BrickWorlds)                       | Manage multiple worlds with custom generators.                               | :heavy_check_mark: |
+| [BrickMovableStructures](https://github.com/MinestomBrick/BrickMovableStructures) | Create smooth movable structures with schematics (based on falling blocks)   |
+| [BrickBlockHandlers](https://github.com/MinestomBrick/BrickBlockHandlers)         | This extension adds vanilla block behavior back with custom events           | :heavy_check_mark: |
+| [BrickNPCs](https://github.com/MinestomBrick/BrickNPCs)                           | Easy to use library for persistent npcs and custom traits                    | :heavy_check_mark: |
+| [BrickEssentials](https://github.com/MinestomBrick/BrickEssentials)               | Adds simple vanilla commands like /teleport, /gamemode ...                   | :x:                |
 
 
 ## Utils
 
 These are useful utils which can speed up the development of new extensions and add new features.
 
-| Name                                                      | Description                                                                                                                                     |
-|-----------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
-| [BrickUtils](https://github.com/MinestomBrick/BrickUtils) | Contains multiple small modules which can be added to your project: translations, commands, scheduling and a database orm.                      |
-| [SmartInvs](https://github.com/MinestomBrick/SmartInvs)   | A fork of the [original](https://github.com/MinusKube/SmartInvs) spigot plugin, updated for Minestom. Create inventory GUI's with a simple API. |                                                                               |
+| Name                                                                          | Description                                                                                                                                     |
+|-------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
+| [BrickScheduler](https://github.com/MinestomBrick/BrickScheduler)             | Library for async scheduling and completable futures                                                                                            |
+| [BrickSchematics](https://github.com/MinestomBrick/BrickSchematics)           | Library for loading schematics                                                                                                                  |
+| [BrickEntityNavigator](https://github.com/MinestomBrick/BrickEntityNavigator) | A custom entity navigator and pathfinding implementation.                                                                                       |
+| [SmartInvs](https://github.com/MinestomBrick/SmartInvs)                       | A fork of the [original](https://github.com/MinusKube/SmartInvs) spigot plugin, updated for Minestom. Create inventory GUI's with a simple API. |                                                                               |
 
 ## Maven repository
 
