@@ -2,6 +2,12 @@ name: Gradle publish
 
 on:
   workflow_call:
+    inputs:
+      javadoc_path:
+        description: 'path to javadocs'
+        default: 'api/build/docs/javadoc'
+        required: false
+        type: string
 
 jobs:
   publish:
@@ -19,4 +25,4 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@v4.2.5
         with:
           branch: javadocs
-          folder: api/build/docs/javadoc
+          folder: ${{ inputs.javadoc_path }}
