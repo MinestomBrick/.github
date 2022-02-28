@@ -21,6 +21,7 @@ All extensions should work on any server implementation, they do **not** depend 
 | [BrickNametags](https://github.com/MinestomBrick/BrickNametags)                   | Manage nametags for each player.                                             | :heavy_check_mark: |
 | [BrickChat](https://github.com/MinestomBrick/BrickChat)                           | Manage custom chat channels.                                                 | :heavy_check_mark: |
 | [BrickWorlds](https://github.com/MinestomBrick/BrickWorlds)                       | Manage multiple worlds with custom generators.                               | :heavy_check_mark: |
+| [BrickPermissions](https://github.com/MinestomBrick/BrickPermissions)             | Manage players and group permissions with persistent storage                 | :heavy_check_mark: |
 | [BrickMovableStructures](https://github.com/MinestomBrick/BrickMovableStructures) | Create smooth movable structures with schematics (based on falling blocks)   | :heavy_check_mark: |
 | [BrickBlockHandlers](https://github.com/MinestomBrick/BrickBlockHandlers)         | This extension adds vanilla block behavior back with custom events           | :heavy_check_mark: |
 | [BrickNPCs](https://github.com/MinestomBrick/BrickNPCs)                           | Easy to use library for persistent npcs and custom traits                    | :heavy_check_mark: |
