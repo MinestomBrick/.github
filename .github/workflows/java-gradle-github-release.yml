@@ -2,6 +2,14 @@ name: Gradle publish
 
 on:
   workflow_call:
+    inputs:
+      files:
+        description: 'globs of files to include in release'
+        default: |
+            build/libs/*.jar
+            app/build/libs/*.jar
+        required: false
+        type: string
 
 jobs:
   pre-release:
@@ -21,6 +29,4 @@ jobs:
           automatic_release_tag: "latest"
           prerelease: true
           title: "Development Build"
-          files: |
-            build/libs/*.jar
-            app/build/libs/*.jar
+          files: ${{ inputs.files }}
